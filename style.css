@@ -388,3 +388,21 @@ header button {
   bottom: 0;
   max-width: 600px;
 }
+/* Responsive design */
+@media screen and (max-width: 920px) {
+  header nav {
+    display: none;
+  }
+}
+header nav.responsive {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 55px;
+  background-color: #1d1d1d;
+  border: 1px solid #555555;
+  z-index: 10;
+}
+header nav.responsive ul {
+  display: block;
+}
