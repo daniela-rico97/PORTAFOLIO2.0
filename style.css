@@ -1,0 +1,390 @@
+/*ya importamos las fuentes que usaremos de google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #171717;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/*encabezado*/
+header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+  font-family: "Oswald";
+}
+header h1 {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+header h1 .cuadro {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  padding: 10px;
+  border: bottom 3px solid transparent;
+  margin: 0 30px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+header nav ul li a:hover {
+  border-bottom: 3px solid #fff;
+}
+header button {
+  border: none;
+  padding: 3px 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/*seccion inicio*/
+.contenido {
+  max-width: 1000px;
+  margin: auto;
+}
+#inicio .contenido .fila {
+  display: flex;
+  background: transparent;
+}
+#inicio .contenido .fila .col {
+  width: 35%;
+  position: relative;
+}
+#inicio .contenido .fila .ui {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 132px;
+  display: flex;
+  align-items: baseline;
+}
+#inicio .contenido .fila .ui .circulo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #a679e6;
+  border-radius: 12px;
+}
+#inicio .contenido .fila .col .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+#inicio .contenido .fila .col .info h2 {
+  width: fit-content;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#inicio .contenido .fila .col .txt {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 43px;
+}
+.vertical {
+  top: 37%;
+  left: -10%;
+  position: absolute;
+  transform: scale(-1) translate(-20%);
+  writing-mode: vertical-lr;
+  letter-spacing: 2px;
+}
+.circulo-principal {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #b591e7;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+#inicio .contenido .fila .col imag {
+  display: block;
+}
+#inicio .contenido .fila .derecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#inicio .contenido .fila .derecha h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#inicio .contenido .fila .derecha p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  width: fit-content;
+  background-color: #8c51e0;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+.btn-primary:hover {
+  background-color: #171717;
+}
+.btn-secondary {
+  display: inline-block;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 7px 15px;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* seccion sobre mi*/
+#sobremi {
+  padding: 50px 10px;
+  height: 90vh;
+}
+#sobremi .contenido .fila {
+  display: flex;
+  align-items: center;
+}
+#sobremi .contenido .fila .col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+}
+.titulo-seccion {
+  font-size: 61px;
+  margin-bottom: 20px;
+}
+.resaltado {
+  color: #a35ff9;
+  font-weight: normal;
+}
+#sobremi .contenido .fila .col > p {
+  font-size: 14px;
+  width: 350px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+#sobremi .contenido .fila .col .skills {
+  margin: 20px 0;
+}
+#sobremi .contenido .fila .col .skills p {
+  margin-right: 40px;
+}
+#sobremi .contenido .fila .col .skills .punto {
+  width: 10px;
+  height: 10px;
+  background-color: #a35ff9;
+  display: inline-block;
+  margin-right: 15px;
+}
+#sobremi .contenido .fila .col .barra-skill {
+  width: 80%;
+  height: 15px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+#sobremi .contenido .fila .col .barra-skill span {
+  display: inline-block;
+  font-size: 10px;
+  position: relative;
+  text-align: center;
+  /* bottom: 8px;*/
+  width: 100%;
+}
+.progreso {
+  background-color: #a35ff9;
+  width: 0%;
+}
+/*animaciones que se agrearan dinamicamente mediante javascript*/
+.dw {
+  width: 0%;
+  animation: dw 1.5s forwards;
+}
+@keyframes dw {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+.dg {
+  width: 0%;
+  animation: dg 1.5s forwards;
+}
+@keyframes dg {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+.md {
+  width: 60%;
+  animation: md 1.5s forwards;
+}
+@keyframes md {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.gp {
+  width: 0%;
+  animation: gp 1.5s forwards;
+}
+@keyframes gp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+#sobremi .contenido .fila .col img {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+}
+/* SECCION PROYECTOS*/
+#proyectos {
+  padding: 50px 10px;
+}
+#proyectos .contenido .fila {
+  display: flex;
+  justify-content: space-between;
+}
+#proyectos .contenido .fila .col {
+  width: 250px;
+  border: 2px solid #fff;
+  position: relative;
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+#proyectos .contenido .fila .col:hover {
+  box-shadow: 0px 0px 20px #a35ff9;
+  transform: scale((1.05));
+}
+#proyectos .contenido .fila .col .numero-curso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: 0.4s;
+}
+#proyectos .contenido .fila .col:hover .numero-curso {
+  left: 50%;
+  transform: translateX(-50%);
+}
+#proyectos .contenido .fila .col .titulo-curso {
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+#proyectos .contenido .fila .col hr {
+  width: 50px;
+  background-color: #a35ff9;
+  border: none;
+
+  height: 2px;
+  margin: 20px auto;
+}
+#proyectos .contenido .fila .col p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+/*SECCION NUMEROS*/
+#numeros {
+  background-color: #1d1d1d;
+  padding: 50px 10px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+#numero .fila {
+  display: flex;
+  align-items: center;
+}
+
+/*seccion de contacto*/
+/* sección contacto */
+#contacto {
+  padding: 50px 10px;
+  position: relative;
+  height: 100vh;
+}
+#contacto .contenido {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+}
+#contacto form {
+  max-width: 500px;
+  width: 100%;
+}
+#contacto form p {
+  margin-bottom: 30px;
+}
+#contacto form input,
+#contacto form textarea {
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border: 3px solid #a35ff9;
+  padding: 10px;
+  display: block;
+  margin-bottom: 20px;
+  color: #fff;
+  outline: none;
+}
+#contacto .img-subs {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 600px;
+}
